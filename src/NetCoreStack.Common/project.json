@@ -4,12 +4,12 @@
   "dependencies": {
     "Microsoft.AspNetCore.Mvc.Core": "1.1.0",
     "Microsoft.Extensions.DependencyInjection": "1.1.0",
-    "NETStandard.Library": "1.6.1",
-    "System.ComponentModel.Annotations": "4.3.0",
-    "System.Reflection.TypeExtensions": "4.3.0"
+    "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.1.0",
+    "NETStandard.Library": "1.6.1"
   },
 
   "frameworks": {
-    "netstandard1.6": {}
+    "netstandard1.6": {},
+    "net451": {}
   }
 }
