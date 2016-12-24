@@ -2,26 +2,24 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
+using NetCoreStack.Common.Extensions;
 
 namespace NetCoreStack.Common
 {
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface, AllowMultiple = false, Inherited = false)]
-    public class ApiRouteAttribute : RouteAttribute
+    [AttributeUsage(AttributeTargets.Interface, AllowMultiple = false, Inherited = false)]
+    public sealed class ApiRouteAttribute : RouteAttribute
     {
-        public Type Type { get; set; }
+        public string RegionKey { get; set; }
 
         public MediaTypeCollection ContentTypes { get; set; } = new MediaTypeCollection();
 
-        public string RegionKey { get; set; }
-
-        public ApiRouteAttribute(string template, Type type)
+        public ApiRouteAttribute(string template, string regionKey)
             : base(template)
         {
-            if (type == null)
-                throw new ArgumentNullException(nameof(type));
+            if (!regionKey.HasValue())
+                throw new ArgumentNullException(nameof(regionKey));
 
-            Type = type;
-
+            RegionKey = regionKey;
             ContentTypes.Add(MediaTypeHeaderValue.Parse("application/json"));
         }
     }
