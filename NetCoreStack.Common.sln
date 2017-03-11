@@ -1,22 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E959652-48F1-4FD1-8919-66D5C4D58154}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72F2A51A-CEA6-45C1-BCBA-5323729AF947}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NetCoreStack.Common", "src\NetCoreStack.Common\NetCoreStack.Common.xproj", "{765EEE5D-4716-4880-AAAD-E37A50D00CC4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{96965F0E-091D-4741-A8A4-925868C196EB}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NetCoreStack.Common.Tests", "test\NetCoreStack.Common.Tests\NetCoreStack.Common.Tests.xproj", "{A02AE155-5CC4-4BB5-AB71-D21F940211BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreStack.Common", "src\NetCoreStack.Common\NetCoreStack.Common.csproj", "{765EEE5D-4716-4880-AAAD-E37A50D00CC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreStack.Common.Tests", "test\NetCoreStack.Common.Tests\NetCoreStack.Common.Tests.csproj", "{A02AE155-5CC4-4BB5-AB71-D21F940211BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
