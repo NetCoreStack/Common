@@ -7,6 +7,10 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Authors>Gencebay Demir</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright 2016 (c) NetCoreStack. All rights reserved.</Copyright>
+    <PackageTags>strongnames helpers extensions common</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
